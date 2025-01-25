@@ -1,3 +1,75 @@
-.container{
-    background-color: aqua;
+.banner {
+    background-image: url('../../../public/images/banner-sobre.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner>h1 {
+    color: var(--custom-white);
+    font-weight: bold;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 3px 5px 2px var(--custom-gray);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texts {
+    max-width: 1024px;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.texts>h3 {
+    font-size: 32px;
+}
+
+.texts>h4 {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.texts>p {
+    text-align: center;
+    font-style: 16px;
+}
+
+.imgs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img {
+    width: 50%;
+    height: auto;
+}
+
+@media screen and (max-width: 759px) {
+    .banner {
+        height: 400px;
+    }
+
+    .banner>h1 {
+        font-size: 48px;
+    }
+
+    .img {
+        width: 100%;
+    }
 }
